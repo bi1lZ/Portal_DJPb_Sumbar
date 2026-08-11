@@ -1,108 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AppHub Central</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap" rel="stylesheet" />
-  
-  <style>
-    /* Font bawaan sistem Apple (San Francisco) */
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    
-    /* Ikon bergaya minimalis */
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-    }
-  </style>
-</head>
-<!-- Background gradasi ala macOS/iOS -->
-<body class="bg-gradient-to-br from-[#e0c3fc] via-[#8ec5fc] to-[#e0c3fc] min-h-screen flex flex-col antialiased text-gray-900 selection:bg-blue-200">
-  
-  <div class="flex flex-col flex-1 py-10 px-4 md:px-8 justify-center min-h-screen">
-    
-    <!-- Aplikasi Wrapper (Glassmorphism Apple Style) -->
-    <main class="mx-auto w-full max-w-6xl bg-white/60 backdrop-blur-3xl border border-white/50 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-[2rem] flex flex-col overflow-hidden relative p-8 md:p-12">
-      
-      <!-- Header Section -->
-      <section class="mb-12 text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 tracking-tight text-black">AppHub</h1>
-        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium">Gerbang utama untuk mengakses dan menjembatani website Microservice Kanwil DJPb SumBar.</p>
-      </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppHub Central</title>
 
-      <!-- App Bento Grid -->
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- App Card 1: CADIAK -->
-        <div class="bg-white/50 hover:bg-white/80 backdrop-blur-lg rounded-3xl p-6 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col group">
-          <!-- Frame Gambar: object-contain & p-6 agar logo/teks di gambar CADIAK tampil utuh -->
-          <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-white/90 p-6 flex items-center justify-center border border-gray-100 shadow-inner">
-            <img alt="Logo CADIAK" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/CADIAK.png" />
-          </div>
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-xl text-white shadow-md">
-              <span class="material-symbols-outlined text-[22px]">analytics</span>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Font bawaan sistem Apple (San Francisco) */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      /* Ikon bergaya minimalis */
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <!-- Background gradasi ala macOS/iOS -->
+  <body class="bg-gradient-to-br from-[#e0c3fc] via-[#8ec5fc] to-[#e0c3fc] min-h-screen flex flex-col antialiased text-gray-900 selection:bg-blue-200">
+    <div class="flex flex-col flex-1 py-10 px-4 md:px-8 justify-center min-h-screen">
+      <!-- Aplikasi Wrapper (Glassmorphism Apple Style) -->
+      <main class="mx-auto w-full max-w-6xl bg-white/60 backdrop-blur-3xl border border-white/50 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-[2rem] flex flex-col overflow-hidden relative p-8 md:p-12">
+        <!-- Header Section -->
+        <section class="mb-12 text-center">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 tracking-tight text-black">AppHub</h1>
+          <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium">Gerbang utama untuk mengakses dan menjembatani website Microservice Kanwil DJPb SumBar.</p>
+        </section>
+
+        <!-- App Bento Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- App Card 1: CADIAK -->
+          <div class="bg-white/50 hover:bg-white/80 backdrop-blur-lg rounded-3xl p-6 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col group">
+            <!-- Frame Gambar: object-contain & p-6 agar logo/teks di gambar CADIAK tampil utuh -->
+            <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-white/90 p-6 flex items-center justify-center border border-gray-100 shadow-inner">
+              <img alt="Logo CADIAK" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/CADIAK.png" />
             </div>
-            <h2 class="text-xl font-semibold text-gray-900 tracking-tight">CADIAK</h2>
-          </div>
-          <p class="text-[15px] text-gray-600 flex-1 mb-8 leading-relaxed">Platform monitoring data Transfer Ke Daerah (TKD) Provinsi Sumatera Barat meliputi data DAU, DBH, DAK, dan Dana Desa.</p>
-            <a href="https://script.google.com/macros/s/AKfycbxrv_Kov4aI47NVHFAQKk_H46L5F1RlBUQYzSQam5H1GbdmcFBHY2lLKUKTIN3cnoCv8g/exec" target="_blank" class="w-full bg-[#007AFF] text-white font-semibold text-[15px] py-2.5 rounded-full hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2 text-center">
-            Buka Aplikasi
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-xl text-white shadow-md">
+                <span class="material-symbols-outlined text-[22px]">analytics</span>
+              </div>
+              <h2 class="text-xl font-semibold text-gray-900 tracking-tight">CADIAK</h2>
+            </div>
+            <p class="text-[15px] text-gray-600 flex-1 mb-8 leading-relaxed">Platform monitoring data Transfer Ke Daerah (TKD) Provinsi Sumatera Barat meliputi data DAU, DBH, DAK, dan Dana Desa.</p>
+            <a
+              href="https://script.google.com/macros/s/AKfycbxrv_Kov4aI47NVHFAQKk_H46L5F1RlBUQYzSQam5H1GbdmcFBHY2lLKUKTIN3cnoCv8g/exec"
+              target="_blank"
+              class="w-full bg-[#007AFF] text-white font-semibold text-[15px] py-2.5 rounded-full hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2 text-center"
+            >
+              Buka Aplikasi
             </a>
-        </div>
+          </div>
 
-        <!-- App Card 2: Portal CRM -->
-        <div class="bg-white/50 hover:bg-white/80 backdrop-blur-lg rounded-3xl p-6 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col group">
-          <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-gray-100 shadow-inner">
-            <img alt="Ilustrasi Portal CRM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE5OkdJlfdAlHBrs_Rr3zbP_1_st3yz6ETizxgesjFkH8UpSTvsMuIon4ztkS_CLSQNdaFW270G0Ue6MC0aeAnhIt55JLCBwC7EhtwAfpgid4c2yeRwU3EnXNANktOngCYzgN7V3bdw3XtrEi1dw06ehk_poUu6-fGawZ0SwEubPoqNma6PvKtEWm3iznX3ugWPKI7hnCNXtkDs2IEv5mwBMjW0B7EhoeNSKAr0AjivdBE3GrSEZV3aQ" />
-          </div>
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 bg-emerald-500 flex items-center justify-center rounded-xl text-white shadow-md">
-              <span class="material-symbols-outlined text-[22px]">group</span>
+          <!-- App Card 2: Portal CRM -->
+          <div class="bg-white/50 hover:bg-white/80 backdrop-blur-lg rounded-3xl p-6 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col group">
+            <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-gray-100 shadow-inner">
+              <img alt="Ilustrasi Portal CRM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://data-apbd-sumbar.ai.studio/ambo-new-logo.png" />
             </div>
-            <h2 class="text-xl font-semibold text-gray-900 tracking-tight">Portal CRM</h2>
-          </div>
-          <p class="text-[15px] text-gray-600 flex-1 mb-8 leading-relaxed">Manajemen hubungan pelanggan tersentralisasi. Lacak interaksi dan tingkatkan konversi dari berbagai sumber web.</p>
-          <button class="w-full bg-[#007AFF] text-white font-semibold text-[15px] py-2.5 rounded-full hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2">
-            Buka Aplikasi
-          </button>
-        </div>
-
-        <!-- App Card 3: Pojok Treasury -->
-        <div class="bg-white/50 hover:bg-white/80 backdrop-blur-lg rounded-3xl p-6 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col group">
-          <!-- Template Frame Gambar 3 (Disesuaikan agar tidak terpotong) -->
-          <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-white/90 p-6 flex items-center justify-center border border-gray-100 shadow-inner">
-            <img alt="Ilustrasi Pojok Treasury" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/INTRESS.png" />
-          </div>
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 bg-rose-500 flex items-center justify-center rounded-xl text-white shadow-md">
-              <span class="material-symbols-outlined text-[22px]">account_balance</span>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-emerald-500 flex items-center justify-center rounded-xl text-white shadow-md">
+                <span class="material-symbols-outlined text-[22px]">group</span>
+              </div>
+              <h2 class="text-xl font-semibold text-gray-900 tracking-tight">Portal CRM</h2>
             </div>
-            <h2 class="text-xl font-semibold text-gray-900 tracking-tight">Pojok Treasury</h2>
-          </div>
-          <p class="text-[15px] text-gray-600 flex-1 mb-8 leading-relaxed">Dashboard yang ada di Perpustakaan Universitas Andalas untuk melihat bagaimana penyebaran dana APBN, TKD, dan KUR di Provinsi Sumatera Barat.</p>
-            <a href="https://dashboard-apbn-tkd-sumbar.vercel.app/" target="_blank" class="w-full bg-[#007AFF] text-white font-semibold text-[15px] py-2.5 rounded-full hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2 text-center">
-            Buka Aplikasi
+            <p class="text-[15px] text-gray-600 flex-1 mb-8 leading-relaxed">Manajemen hubungan pelanggan tersentralisasi. Lacak interaksi dan tingkatkan konversi dari berbagai sumber web.</p>
+            <a
+              href="https://data-apbd-sumbar.ai.studio"
+              target="_blank"
+              class="w-full bg-[#007AFF] text-white font-semibold text-[15px] py-2.5 rounded-full hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2 text-center"
+            >
+              Buka Aplikasi
             </a>
+          </div>
+
+          <!-- App Card 3: Pojok Treasury -->
+          <div class="bg-white/50 hover:bg-white/80 backdrop-blur-lg rounded-3xl p-6 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col group">
+            <!-- Template Frame Gambar 3 (Disesuaikan agar tidak terpotong) -->
+            <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-white/90 p-6 flex items-center justify-center border border-gray-100 shadow-inner">
+              <img alt="Ilustrasi Pojok Treasury" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/INTRESS.png" />
+            </div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-rose-500 flex items-center justify-center rounded-xl text-white shadow-md">
+                <span class="material-symbols-outlined text-[22px]">account_balance</span>
+              </div>
+              <h2 class="text-xl font-semibold text-gray-900 tracking-tight">Pojok Treasury</h2>
+            </div>
+            <p class="text-[15px] text-gray-600 flex-1 mb-8 leading-relaxed">Dashboard yang ada di Perpustakaan Universitas Andalas untuk melihat bagaimana penyebaran dana APBN, TKD, dan KUR di Provinsi Sumatera Barat.</p>
+            <a
+              href="https://dashboard-apbn-tkd-sumbar.vercel.app/"
+              target="_blank"
+              class="w-full bg-[#007AFF] text-white font-semibold text-[15px] py-2.5 rounded-full hover:bg-blue-600 transition-colors shadow-sm flex items-center justify-center gap-2 text-center"
+            >
+              Buka Aplikasi
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer Section -->
+      <footer class="mx-auto w-full max-w-6xl mt-8 px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px]">
+        <div class="flex gap-6 font-medium text-gray-600">
+          <a href="#" class="hover:text-black transition-colors">Tentang Kami</a>
+          <a href="#" class="hover:text-black transition-colors">Privasi</a>
+          <a href="#" class="hover:text-black transition-colors">Syarat</a>
+          <a href="#" class="hover:text-black transition-colors">Bantuan</a>
         </div>
-
-      </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="mx-auto w-full max-w-6xl mt-8 px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px]">
-      <div class="flex gap-6 font-medium text-gray-600">
-        <a href="#" class="hover:text-black transition-colors">Tentang Kami</a>
-        <a href="#" class="hover:text-black transition-colors">Privasi</a>
-        <a href="#" class="hover:text-black transition-colors">Syarat</a>
-        <a href="#" class="hover:text-black transition-colors">Bantuan</a>
-      </div>
-    </footer>
-  </div>
-
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
